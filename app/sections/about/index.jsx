@@ -23,34 +23,16 @@ export function AboutSection() {
 						}}
 					>
 						<p>
-							I'm a results-oriented Flutter and Frontend Developer with over 7 yrs of combined
-							experience in building and maintaining high-quality, cross-platform mobile and web
-							applications. His technical expertise spans Flutter, React, and Next.js, with a strong
-							focus on developing responsive interfaces and ensuring seamless collaboration between
-							design and backend teams. He has proven success in migrating production apps from
-							React Native, integrating real-time communication through FCM and Ably, and
-							contributing to complex products such as a dating platform and a digital wallet.
+							Hi, I’m Owen — a full-stack software engineer specializing in Ruby on Rails, backend development, and AI-powered features. I build clean, efficient applications from end to end, with a strong focus on automation, performance, and intuitive user experiences.
 						</p>
 						<p className="my-3.5">
-							I graduated from the Technical University of Moldova with a degree in Computer
-							Science, where his passion for web programming first took shape. During my studies, I
-							immersed mymself in learning modern technologies, constantly expanding his skills and
-							exploring new programming concepts to stay ahead in a fast-evolving industry.
+							My journey into tech started in 2018 when I discovered how much impact a well-designed system can have on real-world processes. Since then, I’ve built two production platforms: IBICASA.com, a real-estate system that automated listings and reduced manual work by 50%, and True Trek, an AI-driven travel platform that transforms traveler insights into personalized recommendations.
 						</p>
 						<p>
-							My professional journey officially began in 2017 as a WordPress developer. This early
-							stage honed my understanding of web architecture and UI implementation, while
-							nurturing my curiosity for scalable, maintainable code. My enthusiasm for modern
-							frontend development led me to learn React & Next.js, where I quickly discovered the
-							speed and flexibility of building dynamic interfaces.
+							I enjoy solving complex problems, designing thoughtful architectures, and turning ideas into scalable products. With a background in finance and business operations, I bring a unique blend of technical ability, analytical thinking, and product intuition to every project.
 						</p>
 						<p className="my-3.5">
-							In December 2022, I transitioned into a role focused on React development, which soon
-							opened the door to mobile app development with Flutter - a move that reshaped my
-							career. Initially hesitant, I embraced the challenge and found a new passion for
-							building performant, elegant, and maintainable mobile experiences. Today, I continue
-							to push for clean architecture, scalability, and accessibility in every project I
-							undertake.
+							I’m always excited to collaborate on meaningful products—especially those involving Rails, AI, automation, or workflow improvement.
 						</p>
 					</div>
 				</div>

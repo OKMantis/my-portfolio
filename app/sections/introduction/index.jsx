@@ -14,8 +14,8 @@ export function WelcomeSection() {
 
 	let [count, setCount] = useState(0);
 	const [text] = useState([
-		"build Flutter apps for Android/iOS",
-		"convert design into modern UI",
+		"build full-stack apps with Ruby on Rails",
+		"develop AI-powered features with OpenAI APIs",
 		"build interactive UI using React",
 		"develop websites using Next.js"
 	]);
@@ -50,7 +50,7 @@ export function WelcomeSection() {
 							}}
 						>
 							<p>
-								Hi, I&apos;m <mark>Vasile</mark> a <mark>passionate</mark> software developer.
+								Hi, I’m <mark>Owen</mark>, a <mark>full-stack software engineer</mark> building AI-powered web apps.
 							</p>
 						</h1>
 
