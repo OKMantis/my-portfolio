@@ -50,7 +50,7 @@ export function WelcomeSection() {
 							}}
 						>
 							<p>
-								Hi, I’m <mark>Owen</mark>, a <mark>full-stack software engineer</mark> building AI-powered web apps.
+								Hi, I'm <mark>Owen</mark>, a <mark>full-stack software engineer</mark> building AI-powered web apps.
 							</p>
 						</h1>
 

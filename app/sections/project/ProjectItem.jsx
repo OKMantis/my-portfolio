@@ -9,14 +9,11 @@ import { FiExternalLink } from "react-icons/fi";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 export function ProjectItem({ project, index }) {
-	const { description, images, liveUrl, repoUrl, stack, title } = project;
+	const { description, image, url, github, techStack, title } = project;
 	const cardRef = useRef(null);
 	const isInView = useInView(cardRef, { once: true });
 
-	const galleryImages = images.map((img) => ({
-		original: img,
-		loading: "lazy"
-	}));
+	const galleryImages = image ? [{ original: image, loading: "lazy" }] : [];
 
 	return (
 		<article
@@ -56,9 +53,9 @@ export function ProjectItem({ project, index }) {
 				</header>
 
 				<footer className="flex flex-col gap-10">
-					{!!stack.length && (
+					{techStack && techStack.length > 0 && (
 						<div className="flex-center flex-wrap gap-3">
-							{stack.map((tag) => (
+							{techStack.map((tag) => (
 								<span
 									key={tag}
 									tabIndex="0"
@@ -71,9 +68,9 @@ export function ProjectItem({ project, index }) {
 					)}
 
 					<div className="flex-center gap-10">
-						{repoUrl && (
+						{github && (
 							<Link
-								href={repoUrl}
+								href={github}
 								target="_blank"
 								className="icon-link-btn"
 								title="Go to Github repository"
@@ -82,9 +79,9 @@ export function ProjectItem({ project, index }) {
 								<span>Source</span>
 							</Link>
 						)}
-						{liveUrl && (
+						{url && (
 							<Link
-								href={liveUrl}
+								href={url}
 								target="_blank"
 								className="icon-link-btn"
 								title="Go to live address"
