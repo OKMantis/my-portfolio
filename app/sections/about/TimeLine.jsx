@@ -4,13 +4,14 @@ import { LazyMotion, domAnimation, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const TimeLineData = [
-	{ year: 2025, text: "Continue as Flutter & Web Front-end developer" },
-	{ year: 2023, text: "Start my journey as a Flutter developer" },
-	{ year: 2022, text: "Start my journey as a React developer" },
-	{ year: 2021, text: "Dive completely into React.js" },
-	{ year: 2018, text: "Work as a WordPress developer" },
-	{ year: 2017, text: "Start a 3mo WordPress internship" }
+	{ year: 2025, text: "Completed Le Wagon AI Software Development bootcamp" },
+	{ year: 2025, text: "Built TrueTrek, an AI-powered social travel platform" },
+	{ year: 2024, text: "Designed and built IBICASA.com, a real estate platform platform" },
+	{ year: 2019, text: "Built IbizaGardenHouses.com, a prefab garden shed commerce web app" },
+	{ year: 2018, text: "Graduated from Le Wagon and started building full-stack web applications" }
 ];
+
+
 
 export function TimeLine() {
 	const colorMode = "dark";
