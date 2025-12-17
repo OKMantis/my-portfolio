@@ -19,7 +19,7 @@ export function useScrollTo() {
 
 	const scrollToEl = (e) => {
 		e.preventDefault();
-		const hash = e.target.hash;
+		const hash = e.currentTarget.hash;
 		const offsetTop = document?.querySelector(hash)?.offsetTop - height;
 
 		scroll({
