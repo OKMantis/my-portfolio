@@ -10,6 +10,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { AiOutlineOpenAI } from "react-icons/ai";
 import { RiCopilotFill } from "react-icons/ri";
 import { RiClaudeFill } from "react-icons/ri";
+import { GrHeroku } from "react-icons/gr";
 import {
 	SiAdobexd,
 	SiAndroidstudio,
@@ -49,6 +50,7 @@ export const TECHNOLOGIES = [
 			{ name: "Ruby", icon: <AiOutlineRuby size={32} /> },
 			{ name: "Ruby on Rails", icon: <SiRubyonrails size={32} /> },
 			{ name: "PostgreSQL", icon: <BiLogoPostgresql size={32} /> },
+			{ name: "Heroku", icon: <GrHeroku size={32} /> },
 			{ name: "OpenAI", icon: <AiOutlineOpenAI size={32} /> },
 			{ name: "Copilot", icon: <RiCopilotFill size={32} /> },
 			{ name: "Claude", icon: <RiClaudeFill size={32} /> },
