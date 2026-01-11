@@ -1,23 +1,23 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'projects',
+  name: 'project',
   type: 'document',
   title: 'Projects',
   fields: [
     defineField({
-      name: 'createdAt',
-      title: 'Creation date',
-      type: 'date',
-      options: {
-        dateFormat: 'DD-MM-YYYY',
-        calendarTodayLabel: 'Today',
-      },
-    }),
-    defineField({
       name: 'title',
       type: 'string',
       title: 'Title',
+    }),
+    defineField({
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
     }),
     defineField({
       name: 'description',
@@ -25,39 +25,33 @@ export default defineType({
       type: 'text',
     }),
     defineField({
-      name: 'category',
-      type: 'array',
-      title: 'Category',
-      of: [{type: 'reference', to: {type: 'category'}}],
+      name: 'featured',
+      title: 'Featured',
+      type: 'boolean',
+      description: 'Mark this project as featured',
     }),
     defineField({
-      name: 'stack',
-      type: 'array',
-      title: 'Stack',
-      of: [{type: 'reference', to: {type: 'stack'}}],
-    }),
-    defineField({
-      name: 'poster',
-      title: 'Poster',
+      name: 'image',
+      title: 'Image',
       type: 'image',
       options: {
         hotspot: true,
       },
     }),
     defineField({
-      name: 'images',
-      title: 'Gallery',
+      name: 'techStack',
       type: 'array',
-      of: [{type: 'image'}],
-    }),
-    defineField({
-      title: 'Repo URL',
-      name: 'repoUrl',
-      type: 'url',
+      title: 'Tech Stack',
+      of: [{type: 'string'}],
     }),
     defineField({
       title: 'Live URL',
-      name: 'liveUrl',
+      name: 'url',
+      type: 'url',
+    }),
+    defineField({
+      title: 'GitHub URL',
+      name: 'github',
       type: 'url',
     }),
   ],
