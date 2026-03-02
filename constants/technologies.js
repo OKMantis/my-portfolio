@@ -11,6 +11,7 @@ import { AiOutlineOpenAI } from "react-icons/ai";
 import { RiCopilotFill } from "react-icons/ri";
 import { RiClaudeFill } from "react-icons/ri";
 import { GrHeroku } from "react-icons/gr";
+import { SiRedis } from "react-icons/si";
 import {
 	SiAdobexd,
 	SiAndroidstudio,
@@ -38,8 +39,6 @@ export const TECHNOLOGIES = [
 			{ name: "HTML", icon: <AiFillHtml5 size={32} /> },
 			{ name: "CSS", icon: <DiCss3 size={32} /> },
 			{ name: "JS", icon: <IoLogoJavascript size={32} /> },
-			{ name: "React", icon: <FaReact size={32} /> },
-			{ name: "Next", icon: <TbBrandNextjs size={32} /> },
 			{ name: "Tailwind CSS", icon: <TbBrandTailwind size={32} /> },
 			{ name: "Bootstrap", icon: <BsBootstrap size={32} /> },
 		]
@@ -50,9 +49,9 @@ export const TECHNOLOGIES = [
 			{ name: "Ruby", icon: <AiOutlineRuby size={32} /> },
 			{ name: "Ruby on Rails", icon: <SiRubyonrails size={32} /> },
 			{ name: "PostgreSQL", icon: <BiLogoPostgresql size={32} /> },
+			{ name: "Redis", icon: <SiRedis size={32} /> },
 			{ name: "Heroku", icon: <GrHeroku size={32} /> },
 			{ name: "OpenAI", icon: <AiOutlineOpenAI size={32} /> },
-			{ name: "Copilot", icon: <RiCopilotFill size={32} /> },
 			{ name: "Claude", icon: <RiClaudeFill size={32} /> },
 		]
 	},

@@ -23,16 +23,16 @@ export function AboutSection() {
 						}}
 					>
 						<p>
-							Hi, I’m Owen — a full-stack software engineer specializing in Ruby on Rails, backend development, and AI-powered features. I build clean, efficient applications from end to end, with a strong focus on automation, performance, and intuitive user experiences.
+								Hi, I'm Owen, a Rails developer with a background that most engineers don't have: five years as a financial auditor at Big Four firms before moving into software.
 						</p>
 						<p className="my-3.5">
-							My journey into tech started in 2018 when I discovered how much impact a well-designed system can have on real-world processes. Since then, I’ve built two production platforms: IBICASA.com, a real-estate system that automated listings and reduced manual work by 50%, and True Trek, an AI-driven travel platform that transforms traveler insights into personalized recommendations.
+								That combination turns out to be genuinely useful in fintech. I understand how financial data flows, what reconciliation actually means, why accuracy and audit trails matter, not because I read about it, but because I spent years inside those processes at PwC and Crowe Horwath.
 						</p>
 						<p>
-							I enjoy solving complex problems, designing thoughtful architectures, and turning ideas into scalable products. With a background in finance and business operations, I bring a unique blend of technical ability, analytical thinking, and product intuition to every project.
+								On the engineering side, I build and maintain production Rails applications, work with background jobs and REST APIs, and integrate AI features using the OpenAI API. My two main platforms are IBICASA.com, a real estate marketplace I've been sole engineer on since 2025, and True Trek, an AI travel platform built during a team sprint at Le Wagon.
 						</p>
 						<p className="my-3.5">
-							I’m always excited to collaborate on meaningful products—especially those involving Rails, AI, automation, or workflow improvement.
+								I'm looking to join a fintech team where the domain depth I bring from auditing is actually an asset, and where I can keep growing as an engineer with people who take their craft seriously.
 						</p>
 					</div>
 				</div>

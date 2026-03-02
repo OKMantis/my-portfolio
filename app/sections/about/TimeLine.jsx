@@ -4,11 +4,12 @@ import { LazyMotion, domAnimation, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const TimeLineData = [
-	{ year: 2025, text: "Completed Le Wagon AI Software Development bootcamp" },
-	{ year: 2025, text: "Built TrueTrek, an AI-powered social travel platform" },
-	{ year: 2024, text: "Designed and built IBICASA.com, a real estate platform platform" },
-	{ year: 2019, text: "Built IbizaGardenHouses.com, a prefab garden shed commerce web app" },
-	{ year: 2018, text: "Graduated from Le Wagon and started building full-stack web applications" }
+	{ year: 2025, text: "Completed Le Wagon AI Software Development bootcamp in Barcelona" },
+	{ year: 2025, text: "Built True Trek, an AI travel platform with OpenAI API and Sidekiq background jobs" },
+	{ year: 2025, text: "Took sole ownership of IBICASA.com, rebuilding the admin panel and adding multilingual support" },
+	{ year: 2018, text: "Built IbizaGardenHouses.com, a production client site with Slack webhooks and automated emails" },
+	{ year: 2018, text: "Completed Le Wagon Full-Stack Web Development bootcamp in Amsterdam" },
+	{ year: 2012, text: "Began five years as a financial auditor at PwC, Crowe Horwath, and PKF Wallast" }
 ];
 
 

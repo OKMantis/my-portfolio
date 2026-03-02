@@ -16,8 +16,8 @@ export function WelcomeSection() {
 	const [text] = useState([
 		"build full-stack apps with Ruby on Rails",
 		"develop AI-powered features with OpenAI APIs",
-		"build interactive UI using React",
-		"develop websites using Next.js"
+		"build responsive frontends with Hotwire & Tailwind",
+		"bring financial domain expertise to backend engineering"
 	]);
 
 	const onClick = (e) => scrollToEl(e);
