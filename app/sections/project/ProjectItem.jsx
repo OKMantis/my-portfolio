@@ -55,9 +55,9 @@ export function ProjectItem({ project, index }) {
 				<footer className="flex flex-col gap-10">
 					{techStack && techStack.length > 0 && (
 						<div className="flex-center flex-wrap gap-3">
-							{techStack.map((tag) => (
+							{techStack.map((tag, i) => (
 								<span
-									key={tag}
+									key={`${tag}-${i}`}
 									tabIndex="0"
 									className="px-2 text-sm leading-normal rounded bg-badge-light/50 dark:bg-badge-dark"
 								>
