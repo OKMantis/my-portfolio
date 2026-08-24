@@ -7,8 +7,9 @@ import useSWR from "swr";
 import { fetcher } from "utils/fetcher";
 import Error from "../error";
 import { Projects } from "./components/Projects";
+import { ALL_PROJECTS_QUERY } from "../../constants";
 
-const url = `${process.env.NEXT_PUBLIC_SANITY_URL}${process.env.NEXT_PUBLIC_SANITY_ALL_PROJECTS}`;
+const url = `${process.env.NEXT_PUBLIC_SANITY_URL}${ALL_PROJECTS_QUERY}`;
 
 export default function Page() {
 	const { data, error } = useSWR(url, fetcher);

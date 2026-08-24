@@ -41,7 +41,9 @@ import { AppHeader } from "components";
 import { ThemeContext } from "context";
 ```
 
-**Data fetching** uses SWR with a custom fetcher that authenticates via `NEXT_PUBLIC_SANITY_TOKEN`. Sanity queries are stored in environment variables (`NEXT_PUBLIC_SANITY_*`).
+**Data fetching** uses SWR with a custom fetcher. The `production` dataset is public, so reads are unauthenticated — no token is involved. GROQ queries live in `constants/queries.js`.
+
+**Project ordering** is controlled by the `sortOrder` number field on each project in Sanity Studio (lower shows first). Projects without one fall back to oldest-first.
 
 **Styling** uses Tailwind CSS with dark mode (`class` strategy). Custom colors are defined in `tailwind.config.js` (brand-light, brand-dark, brand-purple, etc.).
 
@@ -50,7 +52,7 @@ import { ThemeContext } from "context";
 ### Sanity Schema Types
 
 Located in `/sanity/schemas`:
-- `projects` - Portfolio projects with title, description, category refs, stack refs, images, URLs
+- `project` - Portfolio projects: title, slug, description, sortOrder, featured, image, techStack (array of strings), url, github
 - `category` - Project categories
 - `stack` - Technology stack items
 
@@ -58,8 +60,11 @@ Located in `/sanity/schemas`:
 
 Required in `.env.local`:
 - `NEXT_PUBLIC_SANITY_URL` - Sanity API endpoint
-- `NEXT_PUBLIC_SANITY_TOKEN` - Sanity API token
-- `NEXT_PUBLIC_SANITY_LATEST_PROJECTS` - GROQ query for latest projects
-- `NEXT_PUBLIC_SANITY_ALL_PROJECTS` - GROQ query for all projects
-- `NEXT_PUBLIC_SANITY_PROJECTS` - GROQ query for projects
-- `NEXT_PUBLIC_SANITY_PROJECT_BY_CATEGORY` - GROQ query for filtering by category
+
+That is the only one required. GROQ queries are defined in `constants/queries.js`, not
+in environment variables.
+
+## Deployment
+
+Production is deployed from the CLI with `vercel --prod`. Pushes to `master` create
+Preview deployments only, unless the project's Production Branch is set to `master`.

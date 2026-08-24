@@ -5,11 +5,11 @@ import { Suspense, useRef } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import useSWR from "swr";
 import { fetcher } from "utils/fetcher";
-import { SITE_ROUTES } from "../../../constants";
+import { LATEST_PROJECTS_QUERY, SITE_ROUTES } from "../../../constants";
 import Error from "../../error";
 import { Projects } from "../../projects/components/Projects";
 
-const url = `${process.env.NEXT_PUBLIC_SANITY_URL}${process.env.NEXT_PUBLIC_SANITY_LATEST_PROJECTS}`;
+const url = `${process.env.NEXT_PUBLIC_SANITY_URL}${LATEST_PROJECTS_QUERY}`;
 
 export function ProjectsSection() {
 	const btnRef = useRef(null);
