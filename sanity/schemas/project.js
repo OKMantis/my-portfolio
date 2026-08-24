@@ -25,6 +25,12 @@ export default defineType({
       type: 'text',
     }),
     defineField({
+      name: 'sortOrder',
+      title: 'Sort order',
+      type: 'number',
+      description: 'Lower numbers show first. Leave empty to fall back to newest-first.',
+    }),
+    defineField({
       name: 'featured',
       title: 'Featured',
       type: 'boolean',

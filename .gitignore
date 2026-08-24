@@ -42,3 +42,6 @@ next-env.d.ts
 .vscode
 .fleet
 WARP.md
+
+# playwright mcp artifacts
+.playwright-mcp/
